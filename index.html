@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipen's Gym</title>
+    <link rel="stylesheet" href="gym.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            color: white;
+  background-image: url('cathy-pham-3jAN9InapQI-unsplash.jpg ');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  font-family:kanit,cursive;
+  
+}
+
+        .left {
+            display:inline-block;
+            position: absolute;
+             top: 15px;
+             left: 45px;
+            /* border: 3px solid red; */
+        }
+        .left img{
+            display: inline-block;
+            position: fixed;
+            height: 60px;
+            width: 80px;
+            /* filter: invert(100); */
+            border-radius: 100px;
+            background-color: aliceblue;
+        }
+
+        .left div{
+            text-align: center;
+            margin: 60px 0px 0px 0px;
+            font-size: 25px;
+        }
+        .mid {
+            display:block;
+            position: fixed;
+            width: 70%;
+            margin: 15px auto;
+            margin: -129px 220px;
+            /* border: 3px solid red; */
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 15px;
+            right:10px;
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding:25px 25px ;
+        }
+        .navbar li a:hover, .navbar li a.active{
+                 color: gray;
+                 text-decoration: underline;
+        }
+
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+             border: 1px solid white; 
+            color: white;
+            font-size: 15px;
+            padding:5px 4px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(254, 3, 3);
+        }
+        .container{
+            background-color: #2726268f;
+      border: 3px solid rgb(0, 132, 255);
+      text-decoration:solid;
+      margin:140px 125px;
+      width:350px;
+      height: 500px;
+      border-radius: 10px ;
+        }
+        .container h1{
+            text-align: center;
+            font-family:kanit,cursive;
+            /* color: rgb(3, 41, 255); */
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        .group{
+            text-align: center;
+        }
+        .group input{
+            text-align: center;
+            width: 250px;
+            display: block;
+            padding: 10px;
+            border: 3px solid black;
+            margin: 3px auto;
+            border-radius: 10px;
+            background-color: rgb(181, 232, 237);
+            font-weight: bold;
+            font-family:kanit,cursive;
+            font-size: 15px;
+        }  
+
+        .group input:hover{
+            background-color: aqua;
+        }
+
+        .btn1{
+            margin: 15px 0px 3px 70px;
+            background-color: black;
+             border: 1px solid white; 
+            color: white;
+            font-size: 15px;
+            padding:5px 10px 5px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            background-color: rgb(254, 3, 3);
+        }
+        #selecting{
+            text-align: center;
+            width: 276px;
+            display: block;
+            padding: 9px;
+            border: 3px solid black;
+            margin: 3px auto;
+            border-radius: 10px;
+            background-color: rgb(181, 232, 237);
+            font-weight: bold;
+            font-family:kanit,cursive;
+            color: gray;
+             font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+    <div class="left">
+       <img src="1122.jpg" alt="Bipen's gym logo">
+       <div class="logoname">Bipen Fitness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" target="_blank" class="active">Home</a> </li>
+            <li><a href="#" target="_blank">About Us</a> </li>
+            <li><a href="#" target="_blank">Find the gym</a></li>
+            <li><a href="#" target="_blank"> Fitness Calculator</a></li>
+            <li><a href="#" target="_blank"> Contact Us</a></li>
+            <li><a href="#" target="_blank"> Classes</a></li>
+            <li><a href="#" target="_blank"> FAQ</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">Membership</button>
+        <button class="btn">Franchise</button>
+    </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Zaheerabad now</h1>
+      <form action="gym.js">
+        <div class="group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="group">
+            <input type="number" name="" placeholder="Enter your age">
+        </div>
+        <div class="group">
+            <input type="text" name="" placeholder="Enter your Address">
+        </div>
+        <div class="group">
+            <!-- <input type="text" name="" placeholder="Select your gender">
+            <div> -->
+                <select name="role" id="selecting">
+                    <option value="s">Select your Gender</option>
+                    <option value="s">Male</option>
+                    <option value="t">Female</option>
+                    <option value="O">Other</option>
+                </select>
+            <!-- </div> -->
+        </div>
+        <div class="group">
+            <input type="mobile" name="" placeholder="Enter your Mobile Number">
+        </div>
+        <div class="group">
+            <input type="email" name="" placeholder="Enter your E-mail">
+        </div>
+        <div >
+        <!-- <button class="btn1" value="Reset">Reset</button> -->
+        <input class="btn1" type="reset" value="Reset">
+        <input class="btn1"  type="submit" value="Submit">
+        <!-- <button class="btn1" value="submit">Submit</button> -->
+    </div>
+      </form>
+    </div>
+</body>
+
+</html>
